@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.boxHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkgrey;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.boxHeader .boxNav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.boxHeader .boxNav a{
+    background-color: cornflowerblue;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    transition: background-color .2s;
+}
+
+.boxHeader .boxNav a:hover {
+    background-color: rgb(51, 85, 148);
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+
+.formBox input {
+    width: 100%;
+    max-width: 50%;
+    padding: 0.5rem;
+}
+
+.formBox .buttonCadastrar {
+    background-color: green;
+    border: none;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.formBox .buttonCadastrar:hover {
+    background-color: rgba(0, 128, 0, 0.877);
+}
+
+.listBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.listBox .boxContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gainsboro;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.boxContent .linksBox {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.boxContent .linksBox .visualizar {
+    background-color: cornflowerblue;
+    padding: 0.5rem 0.2rem;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.boxContent .linksBox .editar {
+    background-color: goldenrod;
+    padding: 0.5rem 0.2rem;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.boxContent .linksBox .apagar {
+    background-color: brown;
+    padding: 0.5rem 0.2rem;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.visualizar:hover, .editar:hover, .apagar:hover {
+    transition: filter .2s;
+}
+
+.visualizar:hover, .editar:hover, .apagar:hover {
+    filter: brightness(0.7);
+}
